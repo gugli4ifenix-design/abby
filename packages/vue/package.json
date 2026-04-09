@@ -1,0 +1,51 @@
+{
+  "name": "@tryabby/vue",
+  "version": "1.0.0",
+  "description": "Vue integration for Abby",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "@tryabby/core": "workspace:*",
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^2.4.1",
+    "@vitest/coverage-v8": "^0.34.0",
+    "@types/node": "^14.14.41",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": false
+    }
+  },
+  "keywords": [
+    "abby",
+    "vue",
+    "feature-flags",
+    "a/b-testing"
+  ],
+  "author": "",
+  "license": "MIT"
+}
