@@ -1,5 +1,5 @@
 import type { AbbyConfig, GetVariantReturn } from "@tryabby/core";
-import type { Readonly, Ref } from "vue";
+import type { Ref } from "vue";
 
 export interface UseAbbyReturn<T extends AbbyConfig> {
   variant: Readonly<Ref<GetVariantReturn<T>>>;

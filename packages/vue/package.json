@@ -22,15 +22,15 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@tryabby/core": "workspace:*",
-    "vue": "^3.3.0"
+    "@tryabby/core": "workspace:*"
   },
   "devDependencies": {
     "@vue/test-utils": "^2.4.1",
     "@vitest/coverage-v8": "^0.34.0",
     "@types/node": "^14.14.41",
     "typescript": "^5.0.0",
-    "vitest": "^0.34.0"
+    "vitest": "^0.34.0",
+    "vue": "^3.3.0"
   },
   "peerDependencies": {
     "vue": "^3.0.0"

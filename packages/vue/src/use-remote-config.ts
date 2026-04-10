@@ -10,10 +10,14 @@ import type { UseRemoteConfigReturn } from "./types";
  * @returns value ref
  * @throws If config key name is not found in config
  */
-export function useRemoteConfig<T extends AbbyConfig, K = unknown>(
+export function useRemoteConfig<
+  T extends AbbyConfig,
+  RC extends NonNullable<T["remoteConfig"]>,
+  N extends keyof RC,
+>(
   config: T,
-  name: keyof T["remoteConfig"]
-): UseRemoteConfigReturn<K> {
+  name: N
+): UseRemoteConfigReturn<RC[N]> {
   if (!config) {
     throw new Error("Abby config is required");
   }
