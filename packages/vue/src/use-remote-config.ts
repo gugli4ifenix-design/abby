@@ -31,7 +31,7 @@ export function useRemoteConfig<
   try {
     const value = ref(
       getRemoteConfig(config, configName)
-    ) as Ref<K>;
+    ) as Ref<RC[N]>;
 
     return {
       value: readonly(value),
