@@ -1,2 +1,2 @@
-// Assuming this is the line with the issue
-type ReturnType = NonNullable<T["remoteConfig"]>[keyof NonNullable<T["remoteConfig"]>];
+// Use the NonNullable type to infer the return type
+type Key = keyof NonNullable<T['remoteConfig']>;
