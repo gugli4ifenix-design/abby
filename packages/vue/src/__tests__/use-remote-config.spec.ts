@@ -1,2 +1,5 @@
-// Assuming this is the line with the issue
-expect(something).toBe("some string"); // Close the string properly
+// Fix the unterminated assertion string on Line 30
+// Assuming the original line was something like this:
+// expect(something).toBe(
+// Replace it with the correct assertion:
+expect(something).toBe('expected value');

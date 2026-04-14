@@ -1,5 +1,4 @@
-// Remove the line that imports Readonly from 'ts'
-// import type { Readonly } from 'ts';
-
-// Use the built-in Readonly type
-type MyType = Readonly<{ [key: string]: string }>;
+// Remove the invalid import statement on Line 2
+// Replace the line:
+// import { Readonly } from 'ts';
+// With nothing, since Readonly is a built-in TypeScript utility
