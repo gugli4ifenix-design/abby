@@ -1,5 +1,13 @@
-// Before:
-import { Readonly } from 'ts';
+import type { AbbyConfig } from '@tryabby/core'
 
-// After:
-// No import needed, use TypeScript's built-in Readonly<T>
+export interface UseAbbyOptions<T extends AbbyConfig = AbbyConfig> {
+  config: T
+}
+
+export interface UseFeatureFlagOptions<T extends AbbyConfig = AbbyConfig> {
+  config: T
+}
+
+export interface UseRemoteConfigOptions<T extends AbbyConfig = AbbyConfig> {
+  config: T
+}
